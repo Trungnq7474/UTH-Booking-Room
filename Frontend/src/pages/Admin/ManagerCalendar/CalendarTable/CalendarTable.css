@@ -1,0 +1,111 @@
+.schedule-table-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    border-radius: 9px;
+}
+
+.schedule-table-container table {
+    width: max-content;
+    min-width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: auto;
+    font-size: 16px;
+}
+
+.schedule-table-container th {
+   height: 45px;
+    padding: 10px 15px;
+    background: #deebeb;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #d4dddd;
+    white-space: nowrap;
+}
+
+.schedule-table-container td {
+    height: 42px;
+    padding: 8px 15px;
+    background: #f5f5f5;
+    border: 1px solid #dedede;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.schedule-student {
+    color: rgb(4, 0, 255);
+    font-weight: bold;
+}
+
+.schedule-teacher {
+    color: rgb(2, 0, 110);
+    font-weight: bold;
+}
+
+.schedule-status-pending,
+.schedule-status-done,
+.schedule-status-using {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.schedule-status-pending {
+    background: #ff891e;
+}
+
+.schedule-status-done {
+    background: #26964b;
+}
+
+.schedule-status-using {
+    background: #1900ff;
+}
+
+.schedule-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.schedule-view-button,
+.schedule-delete-button {
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.schedule-view-button {
+    background: white;
+    color: #008b8e;
+    border: 1px solid #008b8e;
+}
+
+.schedule-delete-button {
+    background: #008b8e;
+    color: white;
+    border: 1px solid #008b8e;
+}
+
+.schedule-view-button:hover {
+    background: #e5f5f5;
+}
+
+.schedule-delete-button:hover {
+    background: #006f72;
+}

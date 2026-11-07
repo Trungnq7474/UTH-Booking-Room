@@ -5,7 +5,7 @@
     border-radius: 9px;
 }
 
-table {
+.table-container table {
     width: max-content;
     min-width: 100%;
     border-collapse: collapse;
@@ -14,26 +14,18 @@ table {
     font-size: 16px;
 }
 
-thead th {
+.table-container th {
     height: 45px;
     padding: 10px 15px;
     background: #deebeb;
     color: #333;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: bold;
     border: 1px solid #d4dddd;
     white-space: nowrap;
 }
 
-thead th:first-child {
-    border-radius: 8px 0 0 0;
-}
-
-thead th:last-child {
-    border-radius: 0 8px 0 0;
-}
-
-tbody td {
+.table-container td {
     height: 42px;
     padding: 8px 15px;
     background: #f5f5f5;
@@ -44,17 +36,17 @@ tbody td {
 
 .student {
     color: rgb(4, 0, 255);
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .teacher {
     color: rgb(2, 0, 110);
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .technician {
     color: #005f63;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .action-buttons {
@@ -73,9 +65,8 @@ tbody td {
     align-items: center;
     gap: 6px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: bold;
     cursor: pointer;
-    white-space: nowrap;
 }
 
 .edit-button {

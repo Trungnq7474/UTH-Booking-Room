@@ -1,6 +1,6 @@
-import "./UserPagination.css";
+import "./Pagination.css";
 
-function UserPagination() {
+function Pagination() {
     return (
         <>
             <div className="pagination">
@@ -20,4 +20,4 @@ function UserPagination() {
     )
 }
 
-export default UserPagination;
+export default Pagination;

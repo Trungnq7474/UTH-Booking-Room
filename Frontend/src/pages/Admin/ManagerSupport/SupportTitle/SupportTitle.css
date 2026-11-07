@@ -1,4 +1,4 @@
-.page-title {
+.support-page-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,17 +7,11 @@
     color: #555;
 }
 
-.page-title i {
+.support-page-title i {
     font-size: 34px;
 }
 
-.page-title h1 {
-    font-size: 30px;
-    font-weight: 800;
-}
-
-.toolbar {
-    width: 100%;
+.support-toolbar {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -26,8 +20,8 @@
     margin-left: 30px;
 }
 
-.search-box,
-.filter-box {
+.support-search-box,
+.support-filter-box {
     height: 42px;
     background: #f2f4f4;
     border-radius: 20px;
@@ -37,11 +31,11 @@
     padding: 0 15px;
 }
 
-.search-box {
+.support-search-box {
     width: 300px;
 }
 
-.search-box input {
+.support-search-box input {
     width: 100%;
     border: none;
     outline: none;
@@ -49,20 +43,20 @@
     font-size: 16px;
 }
 
-.search-box input::placeholder {
-    color: #008b8e;
-}
-
-.search-box i {
+.support-search-box i {
     font-size: 18px;
 }
 
-.filter-box {
+.support-search-box input::placeholder {
+    color: #008b8e;
+}
+
+.support-filter-box {
     width: 155px;
     position: relative;
 }
 
-.filter-box select {
+.support-filter-box select {
     width: 100%;
     appearance: none;
     border: none;
@@ -72,28 +66,9 @@
     font-size: 16px;
 }
 
-.filter-box i {
+.support-filter-box i {
     position: absolute;
     right: 12px;
     pointer-events: none;
     font-size: 14px;
-}
-
-.add-button {
-    height: 42px;
-    padding: 0 18px;
-    border: none;
-    border-radius: 9px;
-    background: #008b8e;
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.add-button:hover {
-    background: #006f72;
 }

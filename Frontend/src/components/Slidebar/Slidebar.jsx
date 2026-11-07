@@ -22,7 +22,7 @@ function Slidebar() {
 
                     <Link to="/manageruser" className="menu-item active">
                         <i className="fa-solid fa-users"></i>
-                        <span>Quản Lý Người Dùng</span>
+                        <span>Người Dùng</span>
                     </Link>
 
                     <Link to="#" className="menu-item">
@@ -32,22 +32,22 @@ function Slidebar() {
 
                     <Link to="#" className="menu-item">
                         <i className="fa-solid fa-desktop"></i>
-                        <span>Quản Lý Phòng</span>
+                        <span>Phòng</span>
                     </Link>
 
                     <Link to="#" className="menu-item">
                         <i className="fa-solid fa-hard-drive"></i>
-                        <span>Quản Lý Thiết Bị</span>
+                        <span>Thiết Bị</span>
                     </Link>
 
-                    <Link to="#" className="menu-item">
+                    <Link to="/managercalendar" className="menu-item">
                         <i className="fa-regular fa-calendar-days"></i>
-                        <span>Quản Lý Đăng Ký Lịch</span>
+                        <span>Đăng Ký Lịch</span>
                     </Link>
 
-                    <Link to="#" className="menu-item">
+                    <Link to="/managersupport" className="menu-item">
                         <i className="fa-solid fa-headset"></i>
-                        <span>Quản Lý Trợ Giúp</span>
+                        <span>Trợ Giúp</span>
                     </Link>
                 </nav>
 
