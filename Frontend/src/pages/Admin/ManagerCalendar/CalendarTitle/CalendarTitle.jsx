@@ -4,7 +4,7 @@ function CalendarTitle() {
     return (
         <>
             <div className="schedule-page-title">
-                <i className="fa-regular fa-calendar"></i>
+                <i className="fa-regular fa-calendar-days"></i>
                 <h1>QUẢN LÝ ĐĂNG KÝ LỊCH</h1>
             </div>
 

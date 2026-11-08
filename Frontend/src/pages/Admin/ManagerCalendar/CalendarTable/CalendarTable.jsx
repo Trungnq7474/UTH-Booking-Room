@@ -1,6 +1,6 @@
 import "./CalendarTable.css";
 
-function CalendarTable() {
+function CalendarTable({ onView }) {
     return (
         <>
             <div className="schedule-table-container">
@@ -30,7 +30,7 @@ function CalendarTable() {
                             </td>
                             <td>
                                 <div className="schedule-actions">
-                                    <button className="schedule-view-button">
+                                    <button className="schedule-view-button" onClick={onView}>
                                         <i className="fa-regular fa-eye"></i>
                                         Xem
                                     </button>
@@ -55,7 +55,7 @@ function CalendarTable() {
                             </td>
                             <td>
                                 <div className="schedule-actions">
-                                    <button className="schedule-view-button">
+                                    <button className="schedule-view-button" onClick={onView}>
                                         <i className="fa-regular fa-eye"></i>
                                         Xem
                                     </button>
@@ -80,7 +80,7 @@ function CalendarTable() {
                             </td>
                             <td>
                                 <div className="schedule-actions">
-                                    <button className="schedule-view-button">
+                                    <button className="schedule-view-button" onClick={onView}>
                                         <i className="fa-regular fa-eye"></i>
                                         Xem
                                     </button>
@@ -105,7 +105,7 @@ function CalendarTable() {
                             </td>
                             <td>
                                 <div className="schedule-actions">
-                                    <button className="schedule-view-button">
+                                    <button className="schedule-view-button" onClick={onView}>
                                         <i className="fa-regular fa-eye"></i>
                                         Xem
                                     </button>

@@ -1,6 +1,6 @@
 import "./UserForm.css";
 
-function UserForm() {
+function UserForm({ onClose }) {
     return (
         <>
             <div class="modal-overlay">
@@ -8,7 +8,7 @@ function UserForm() {
 
                     <div class="form-header">
                         <h2><i class="fa-solid fa-user-plus"></i> THÊM NGƯỜI DÙNG</h2>
-                        <button class="close-button">
+                        <button class="close-button" onClick={onClose}>
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>

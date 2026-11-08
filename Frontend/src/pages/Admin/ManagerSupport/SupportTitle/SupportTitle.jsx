@@ -4,7 +4,7 @@ function SupportTitle() {
     return (
         <>
             <div className="support-page-title">
-                <i className="fa-solid fa-headphones"></i>
+                <i className="fa-solid fa-headset"></i>
                 <h1>QUẢN LÝ TRỢ GIÚP</h1>
             </div>
 

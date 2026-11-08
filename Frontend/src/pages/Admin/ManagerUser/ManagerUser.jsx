@@ -2,12 +2,16 @@ import UserTitle from "./UserTitle/UserTitle.jsx";
 import UserTable from "./UserTable/UserTable.jsx";
 import Pagination from "../../../components/Pagination/Pagination.jsx";
 import UserForm from "./UserForm/UserForm.jsx";
+import useModal from "../../../hooks/useModal.js";
 
 
 function ManagerUser() {
+
+    const { show, setShow } = useModal();
+
     return (
         <>
-            <UserTitle />
+            <UserTitle onAdd={() => setShow(true)} />
 
             <section className="content">
 
@@ -17,7 +21,7 @@ function ManagerUser() {
 
             </section>
 
-            <UserForm />
+            {show ? <UserForm onClose={() => setShow(false)} /> : ""} 
 
         </>
     )

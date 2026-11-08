@@ -1,6 +1,6 @@
 import "./UserTitle.css";
 
-function UserTitle() {
+function UserTitle({ onAdd }) {
     return (
         <>
             <div className="page-title">
@@ -25,7 +25,7 @@ function UserTitle() {
                     <i className="fa-solid fa-chevron-down"></i>
                 </div>
 
-                <button className="add-button">
+                <button className="add-button" onClick={onAdd}>
                     <i className="fa-solid fa-plus"></i>
                     Thêm Người Dùng
                 </button>

@@ -7,7 +7,6 @@
     align-items: center;
     padding: 20px;
     z-index: 1000;
-    display: none;
 }
 
 @keyframes show {
@@ -30,7 +29,6 @@
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     animation: show 0.4s ease-in-out;
-    display: none;
 }
 
 .form-header {
