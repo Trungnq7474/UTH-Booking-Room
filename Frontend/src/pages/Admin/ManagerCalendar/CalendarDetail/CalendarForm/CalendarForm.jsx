@@ -31,20 +31,6 @@ function CalendarForm() {
                                     <b>Mã Số:</b> 077205001847
                                 </span>
                             </p>
-
-                            <p>
-                                <i className="fa-regular fa-envelope"></i>
-                                <span>
-                                    <b>Email:</b> anv1847@ut.edu.vn
-                                </span>
-                            </p>
-
-                            <p>
-                                <i className="fa-solid fa-phone"></i>
-                                <span>
-                                    <b>SĐT:</b> 0123456789
-                                </span>
-                            </p>
                         </div>
 
                         <div className="schedule-detail-column">
@@ -52,20 +38,6 @@ function CalendarForm() {
                                 <i className="fa-regular fa-calendar"></i>
                                 <span>
                                     <b>Thời Gian Đăng Ký:</b> 5/11/2026 8:00
-                                </span>
-                            </p>
-
-                            <p>
-                                <i className="fa-regular fa-calendar"></i>
-                                <span>
-                                    <b>Thời Gian Sử Dụng:</b> 6/11/2026 9:00
-                                </span>
-                            </p>
-
-                            <p>
-                                <i className="fa-regular fa-calendar"></i>
-                                <span>
-                                    <b>Thời Gian Kết Thúc:</b> 6/11/2026 12:00
                                 </span>
                             </p>
 

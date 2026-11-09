@@ -4,6 +4,8 @@ import ManagerUser from "../pages/Admin/ManagerUser/ManagerUser.jsx";
 import ManagerSupport from "../pages/Admin/ManagerSupport/ManagerSupport.jsx";
 import ManagerCalendar from "../pages/Admin/ManagerCalendar/ManagerCalendar.jsx";
 import ManagerRoom from "../pages/Admin/ManagerRoom/ManagerRoom.jsx";
+import ManagerTool from "../pages/Admin/ManagerTool/ManagerTool.jsx";
+import ManagerAssignment from "../pages/Admin/ManagerAssignment/ManagerAssignment.jsx";
 
 function AppRouters() {
     return (
@@ -30,6 +32,18 @@ function AppRouters() {
             <Route path="/managerroom" element={
                 <MainLayoutAdmin>
                     <ManagerRoom />
+                </MainLayoutAdmin>
+            } />
+
+            <Route path="/managertool" element={
+                <MainLayoutAdmin>
+                    <ManagerTool />
+                </MainLayoutAdmin>
+            } />
+
+            <Route path="/managerassignment" element={
+                <MainLayoutAdmin>
+                    <ManagerAssignment />
                 </MainLayoutAdmin>
             } />
 

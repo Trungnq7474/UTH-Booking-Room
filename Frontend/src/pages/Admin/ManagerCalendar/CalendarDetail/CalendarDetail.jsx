@@ -20,12 +20,12 @@ function CalendarDetail({ onClose }) {
 
                         <div className="schedule-detail-buttons">
                             <button className="schedule-detail-approve">
-                                <i className="fa-regular fa-square-check"></i>
+                                <i class="fa-solid fa-check"></i>
                                 Duyệt
                             </button>
 
                             <button className="schedule-detail-reject">
-                                <i className="fa-regular fa-rectangle-xmark"></i>
+                                <i class="fa-solid fa-xmark"></i>
                                 Từ Chối
                             </button>
                         </div>

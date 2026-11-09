@@ -50,13 +50,6 @@ function UserForm({ onClose, isEdit }) {
 
                         <div class="form-row">
                             <div class="form-group">
-                                <label>Mật khẩu</label>
-                                <input type="password" placeholder="Nhập mật khẩu" />
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
                                 <label>Vai trò</label>
                                 <select>
                                     <option value="">-- Chọn vai trò --</option>

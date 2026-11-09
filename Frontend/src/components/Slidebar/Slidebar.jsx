@@ -25,7 +25,7 @@ function Slidebar() {
                         <span>Người Dùng</span>
                     </Link>
 
-                    <Link to="#" className="menu-item">
+                    <Link to="/managerassignment" className="menu-item">
                         <i className="fa-solid fa-screwdriver-wrench"></i>
                         <span>Phân Công Sự Cố</span>
                     </Link>
@@ -35,7 +35,7 @@ function Slidebar() {
                         <span>Phòng</span>
                     </Link>
 
-                    <Link to="#" className="menu-item">
+                    <Link to="/managertool" className="menu-item">
                         <i className="fa-solid fa-hard-drive"></i>
                         <span>Thiết Bị</span>
                     </Link>
