@@ -3,11 +3,12 @@ import MainLayoutAdmin from "../layouts/MainLayoutAdmin.jsx";
 import ManagerUser from "../pages/Admin/ManagerUser/ManagerUser.jsx";
 import ManagerSupport from "../pages/Admin/ManagerSupport/ManagerSupport.jsx";
 import ManagerCalendar from "../pages/Admin/ManagerCalendar/ManagerCalendar.jsx";
+import ManagerRoom from "../pages/Admin/ManagerRoom/ManagerRoom.jsx";
 
 function AppRouters() {
     return (
         <Routes>
-            
+
             <Route path="/manageruser" element={
                 <MainLayoutAdmin>
                     <ManagerUser />
@@ -23,6 +24,12 @@ function AppRouters() {
             <Route path="/managercalendar" element={
                 <MainLayoutAdmin>
                     <ManagerCalendar />
+                </MainLayoutAdmin>
+            } />
+
+            <Route path="/managerroom" element={
+                <MainLayoutAdmin>
+                    <ManagerRoom />
                 </MainLayoutAdmin>
             } />
 

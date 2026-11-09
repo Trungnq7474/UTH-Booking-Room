@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 import './Slidebar.css';
 
 function Slidebar() {
@@ -9,7 +9,7 @@ function Slidebar() {
                 <div className="icon">
                     <i className="fa-solid fa-bars"></i>
                 </div>
-                
+
                 <div className="sidebar-header">
                     <h2>ADMIN</h2>
                 </div>
@@ -30,7 +30,7 @@ function Slidebar() {
                         <span>Phân Công Sự Cố</span>
                     </Link>
 
-                    <Link to="#" className="menu-item">
+                    <Link to="/managerroom" className="menu-item">
                         <i className="fa-solid fa-desktop"></i>
                         <span>Phòng</span>
                     </Link>

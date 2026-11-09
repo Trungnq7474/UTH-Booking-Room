@@ -1,0 +1,75 @@
+.room-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 0 60px;
+    color: #555;
+}
+
+.room-title i {
+    font-size: 34px;
+}
+
+.room-toolbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
+.room-search,
+.room-filter {
+    height: 42px;
+    background: #f2f4f4;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: #008b8e;
+    padding: 0 15px;
+}
+
+.room-search {
+    width: 300px;
+}
+
+.room-search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+}
+
+.room-search input::placeholder {
+    color: #008b8e;
+}
+
+.room-search i {
+    font-size: 18px;
+}
+
+.room-filter {
+    width: 155px;
+    position: relative;
+}
+
+.room-filter select {
+    width: 100%;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #008b8e;
+    font-size: 16px;
+}
+
+.room-filter i {
+    position: absolute;
+    right: 12px;
+    pointer-events: none;
+    font-size: 14px;
+}
