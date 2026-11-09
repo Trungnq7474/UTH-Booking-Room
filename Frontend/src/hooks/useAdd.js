@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-function useModal() {
+function useForm() {
     const [show, setShow] = useState(false);
 
     return { show, setShow};
 }
 
-export default useModal;
+export default useForm;

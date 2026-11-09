@@ -1,6 +1,6 @@
 import "./UserTable.css";
 
-function UserTable() {
+function UserTable({ onEdit }) {
     return (
         <>
             <div className="table-container">
@@ -27,7 +27,7 @@ function UserTable() {
                             <td>0123456789</td>
                             <td>
                                 <div className="action-buttons">
-                                    <button className="edit-button">
+                                    <button className="edit-button" onClick={onEdit}>
                                         <i className="fa-regular fa-pen-to-square"></i>
                                         Sửa
                                     </button>
@@ -49,7 +49,7 @@ function UserTable() {
                             <td>0123456789</td>
                             <td>
                                 <div className="action-buttons">
-                                    <button className="edit-button">
+                                    <button className="edit-button" onClick={onEdit}>
                                         <i className="fa-regular fa-pen-to-square"></i>
                                         Sửa
                                     </button>
@@ -71,7 +71,7 @@ function UserTable() {
                             <td>0123456789</td>
                             <td>
                                 <div className="action-buttons">
-                                    <button className="edit-button">
+                                    <button className="edit-button" onClick={onEdit}>
                                         <i className="fa-regular fa-pen-to-square"></i>
                                         Sửa
                                     </button>

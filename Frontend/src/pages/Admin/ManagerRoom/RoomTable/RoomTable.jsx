@@ -1,6 +1,6 @@
 import "./RoomTable.css";
 
-function RoomTable() {
+function RoomTable({ onView, onEdit }) {
     return (
         <>
             <div className="room-table-container">
@@ -32,12 +32,12 @@ function RoomTable() {
                             </td>
                             <td>
                                 <div className="room-actions">
-                                    <button className="room-view">
+                                    <button className="room-view" onClick={onView}>
                                         <i className="fa-regular fa-eye"></i>
                                         Xem
                                     </button>
 
-                                    <button className="room-edit">
+                                    <button className="room-edit" onClick={onEdit}>
                                         <i className="fa-regular fa-pen-to-square"></i>
                                         Sửa
                                     </button>
@@ -64,12 +64,12 @@ function RoomTable() {
                             </td>
                             <td>
                                 <div className="room-actions">
-                                    <button className="room-view">
+                                    <button className="room-view" onClick={onView}>
                                         <i className="fa-regular fa-eye"></i>
                                         Xem
                                     </button>
 
-                                    <button className="room-edit">
+                                    <button className="room-edit" onClick={onEdit}>
                                         <i className="fa-regular fa-pen-to-square"></i>
                                         Sửa
                                     </button>
@@ -96,11 +96,11 @@ function RoomTable() {
                             </td>
                             <td>
                                 <div className="room-actions">
-                                    <button className="room-view">
+                                    <button className="room-view" onClick={onView}>
                                         <i className="fa-regular fa-eye"></i>
                                         Xem</button>
 
-                                    <button className="room-edit">
+                                    <button className="room-edit" onClick={onEdit}>
                                         <i className="fa-regular fa-pen-to-square"></i>
                                         Sửa
                                     </button>
@@ -127,12 +127,12 @@ function RoomTable() {
                             </td>
                             <td>
                                 <div className="room-actions">
-                                    <button className="room-view">
+                                    <button className="room-view" onClick={onView}>
                                         <i className="fa-regular fa-eye"></i>
                                         Xem
                                     </button>
 
-                                    <button className="room-edit">
+                                    <button className="room-edit" onClick={onEdit}>
                                         <i className="fa-regular fa-pen-to-square"></i>
                                         Sửa
                                     </button>

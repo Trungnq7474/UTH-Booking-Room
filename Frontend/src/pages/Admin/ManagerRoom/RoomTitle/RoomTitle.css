@@ -73,3 +73,22 @@
     pointer-events: none;
     font-size: 14px;
 }
+
+.room-add {
+    height: 42px;
+    padding: 0 18px;
+    border: none;
+    border-radius: 9px;
+    background: #008b8e;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.room-add:hover {
+    background: #006f72;
+}

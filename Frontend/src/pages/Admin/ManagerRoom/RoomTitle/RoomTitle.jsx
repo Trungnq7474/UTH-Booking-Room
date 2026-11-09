@@ -1,11 +1,11 @@
 import "./RoomTitle.css";
 
-function RoomTitle() {
+function RoomTitle({ onAdd }) {
     return (
         <>
             <div className="room-title">
                 <i className="fa-solid fa-desktop"></i>
-                <h2>QUẢN LÝ PHÒNG</h2>
+                <h1>QUẢN LÝ PHÒNG</h1>
             </div>
 
             <div className="room-toolbar">
@@ -37,6 +37,10 @@ function RoomTitle() {
                     <i className="fa-solid fa-chevron-down"></i>
                 </div>
 
+                <button className="room-add" onClick={onAdd}>
+                    <i className="fa-solid fa-plus"></i>
+                    Thêm Phòng
+                </button>
             </div>
         </>
     )

@@ -1,13 +1,24 @@
 import "./UserForm.css";
 
-function UserForm({ onClose }) {
+function UserForm({ onClose, isEdit }) {
     return (
         <>
             <div class="modal-overlay">
                 <div class="user-form">
 
                     <div class="form-header">
-                        <h2><i class="fa-solid fa-user-plus"></i> THÊM NGƯỜI DÙNG</h2>
+                        <h2>
+                            {isEdit ? (
+                                <>
+                                    <i className="fa-regular fa-pen-to-square"></i> SỬA NGƯỜI DÙNG
+                                </>
+                            ) : (
+                                <>
+                                   <i className="fa-solid fa-user-plus"></i> THÊM NGƯỜI DÙNG
+                                </>
+                            )}
+                        </h2>
+
                         <button class="close-button" onClick={onClose}>
                             <i class="fa-solid fa-xmark"></i>
                         </button>
@@ -60,7 +71,15 @@ function UserForm({ onClose }) {
 
                     <div class="form-footer">
                         <button class="add-button">
-                            <i class="fa-solid fa-user-plus"></i> Thêm Người Dùng
+                            {isEdit ? (
+                                <>
+                                    <i className="fa-regular fa-pen-to-square"></i> Cập Nhật
+                                </>
+                            ) : (
+                                <>
+                                   <i className="fa-solid fa-user-plus"></i> Thêm Người Dùng
+                                </>
+                            )}
                         </button>
                     </div>
 
