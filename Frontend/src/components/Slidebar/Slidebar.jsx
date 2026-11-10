@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import './Slidebar.css';
 
@@ -11,44 +12,44 @@ function Slidebar() {
                 </div>
 
                 <div className="sidebar-header">
-                    <h2>ADMIN</h2>
+                    <Link to="/"><h2>ADMIN</h2></Link>
                 </div>
 
                 <nav className="sidebar-menu">
-                    <Link to="" className="menu-item">
+                    <NavLink to="/" className={({ isActive }) => isActive ? "menu-item active" : "menu-item"}>
                         <i className="fa-solid fa-table-columns"></i>
                         <span>DashBoard</span>
-                    </Link>
+                    </NavLink>
 
-                    <Link to="/manageruser" className="menu-item active">
+                    <NavLink to="/manageruser" className={({ isActive }) => isActive ? "menu-item active" : "menu-item"}>
                         <i className="fa-solid fa-users"></i>
                         <span>Người Dùng</span>
-                    </Link>
+                    </NavLink>
 
-                    <Link to="/managerassignment" className="menu-item">
+                    <NavLink to="/managerassignment" className={({ isActive }) => isActive ? "menu-item active" : "menu-item"}>
                         <i className="fa-solid fa-screwdriver-wrench"></i>
                         <span>Phân Công Sự Cố</span>
-                    </Link>
+                    </NavLink>
 
-                    <Link to="/managerroom" className="menu-item">
+                    <NavLink to="/managerroom" className={({ isActive }) => isActive ? "menu-item active" : "menu-item"}>
                         <i className="fa-solid fa-desktop"></i>
                         <span>Phòng</span>
-                    </Link>
+                    </NavLink>
 
-                    <Link to="/managertool" className="menu-item">
+                    <NavLink to="/managertool" className={({ isActive }) => isActive ? "menu-item active" : "menu-item"}>
                         <i className="fa-solid fa-hard-drive"></i>
                         <span>Thiết Bị</span>
-                    </Link>
+                    </NavLink>
 
-                    <Link to="/managercalendar" className="menu-item">
+                    <NavLink to="/managercalendar" className={({ isActive }) => isActive ? "menu-item active" : "menu-item"}>
                         <i className="fa-regular fa-calendar-days"></i>
                         <span>Đăng Ký Lịch</span>
-                    </Link>
+                    </NavLink>
 
-                    <Link to="/managersupport" className="menu-item">
+                    <NavLink to="/managersupport" className={({ isActive }) => isActive ? "menu-item active" : "menu-item"}>
                         <i className="fa-solid fa-headset"></i>
                         <span>Trợ Giúp</span>
-                    </Link>
+                    </NavLink>
                 </nav>
 
                 <button className="logout">
