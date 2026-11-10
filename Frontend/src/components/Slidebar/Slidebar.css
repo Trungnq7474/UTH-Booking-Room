@@ -74,3 +74,8 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+.logout:hover {
+    background: #e05b4b;
+    color: white;
+}

@@ -12,6 +12,7 @@ function AssignmentTable() {
                             <th>Người Báo Cáo</th>
                             <th>Tên Sự Cố</th>
                             <th>Trạng Thái</th>
+                            <th>Đề Xuất Bảo Trì</th>
                             <th>Nhân Viên Phân Công</th>
                             <th>Thao Tác</th>
                         </tr>
@@ -28,6 +29,12 @@ function AssignmentTable() {
                                     <i className="fa-regular fa-circle-check"></i>
                                     Đã Tiếp Nhận
                                 </span>
+                            </td>
+                            <td>
+                                <button className="assignment-maintenance">
+                                    <i className="fa-regular fa-eye"></i>
+                                    Xem Đề Xuất
+                                </button>
                             </td>
                             <td>
                                 <div className="assignment-select">
@@ -66,6 +73,12 @@ function AssignmentTable() {
                                 </span>
                             </td>
                             <td>
+                                <button className="assignment-maintenance">
+                                    <i className="fa-regular fa-eye"></i>
+                                    Xem Đề Xuất
+                                </button>
+                            </td>
+                            <td>
                                 <div className="assignment-select">
                                     <select defaultValue="">
                                         <option value="">-</option>
@@ -102,6 +115,9 @@ function AssignmentTable() {
                                 </span>
                             </td>
                             <td>
+                               -
+                            </td>
+                            <td>
                                 <div className="assignment-select">
                                     <select defaultValue="Võ Văn X">
                                         <option value="">-</option>
@@ -136,6 +152,9 @@ function AssignmentTable() {
                                     <i className="fa-solid fa-square-check"></i>
                                     Đã Hoàn Thành
                                 </span>
+                            </td>
+                            <td>
+                                -
                             </td>
                             <td>
                                 <div className="assignment-select">

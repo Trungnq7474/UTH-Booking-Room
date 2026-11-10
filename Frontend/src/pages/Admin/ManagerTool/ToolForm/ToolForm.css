@@ -67,7 +67,7 @@
 
 .add-equipment-group label {
     font-size: 17px;
-    font-weight: 700;
+    font-weight: bold;
     color: #444;;
     margin-bottom: 8px;
 }
@@ -111,6 +111,7 @@
 
 .add-equipment-upload i {
     font-size: 26px;
+    margin-top: 25px;
 }
 
 .add-equipment-upload p {

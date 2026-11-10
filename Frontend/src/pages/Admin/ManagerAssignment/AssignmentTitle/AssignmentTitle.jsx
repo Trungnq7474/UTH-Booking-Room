@@ -1,6 +1,6 @@
 import "./AssignmentTitle.css";
 
-function AssignmentTitle() {
+function AssignmentTitle({ onAdd }) {
     return (
         <>
             <div className="assignment-title">
@@ -38,7 +38,7 @@ function AssignmentTitle() {
                     <i className="fa-solid fa-chevron-down"></i>
                 </div>
 
-                <button className="assignment-add">
+                <button className="assignment-add" onClick={onAdd}>
                     <i className="fa-solid fa-plus"></i>
                     Thêm Sự Cố
                 </button>

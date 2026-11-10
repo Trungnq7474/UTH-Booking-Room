@@ -59,33 +59,33 @@ function ToolForm({ onClose, isEdit }) {
                             </div>
 
                             <div className="add-equipment-group">
-                                <label>Tầng</label>
+                                <label>Tên Phòng</label>
 
                                 <select>
-                                    <option value="">-- Chọn tầng-- </option>
-                                    <option>Tầng Trệt</option>
-                                    <option>Tầng 1</option>
-                                    <option>Tầng 2</option>
-                                    <option>Tầng 3</option>
-                                    <option>Tầng 4</option>
-                                    <option>Tầng 5</option>
+                                    <option value="">-- Chọn phòng --</option>
+                                    <option>Phòng Máy - H003</option>
+                                    <option>Phòng Máy - H004</option>
+                                    <option>Phòng Máy - H509</option>
+                                    <option>Phòng Thư Viện</option>
                                 </select>
                             </div>
 
                             <div className="add-equipment-group">
-                                <label>Tên Phòng</label>
+                                <label>Tầng</label>
 
-                                <input
-                                    type="text"
-                                    placeholder="Nhập tên phòng..."
-                                />
+                                <select>
+                                    <option value="">-- Chọn tầng --</option>
+                                    <option>Tầng Trệt</option>
+                                    <option>Tầng 1</option>
+                                    <option>Tầng 5</option>
+                                </select>
                             </div>
 
                             <div className="add-equipment-group">
                                 <label>Khu Vực</label>
 
                                <select>
-                                    <option value="">-- Chọn khu vực-- </option>
+                                    <option value="">-- Chọn khu vực --</option>
                                     <option>Khu H</option>
                                     <option>Khu I</option>
                                     <option>Khu K</option>

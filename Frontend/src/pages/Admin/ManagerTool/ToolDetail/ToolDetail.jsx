@@ -42,7 +42,7 @@ function ToolDetail({ onClose }) {
                             <i className="fa-solid fa-location-dot"></i>
 
                             <p>
-                                <b>Phòng Máy H003 - Khu H - Tầng Trệt</b>
+                                <b>Phòng Máy - H003 - Khu H - Tầng Trệt</b>
                             </p>
                         </div>
 

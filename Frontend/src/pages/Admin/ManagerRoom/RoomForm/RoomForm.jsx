@@ -56,7 +56,7 @@ function RoomForm({ onClose, isEdit }) {
                                 </label>
 
                                 <select>
-                                    <option value="">-- Chọn khu vực-- </option>
+                                    <option value="">-- Chọn khu vực --</option>
                                     <option>Khu H</option>
                                     <option>Khu I</option>
                                     <option>Khu K</option>
@@ -69,12 +69,9 @@ function RoomForm({ onClose, isEdit }) {
                                 </label>
 
                                 <select>
-                                    <option value="">-- Chọn tầng-- </option>
+                                    <option value="">-- Chọn tầng --</option>
                                     <option>Tầng Trệt</option>
                                     <option>Tầng 1</option>
-                                    <option>Tầng 2</option>
-                                    <option>Tầng 3</option>
-                                    <option>Tầng 4</option>
                                     <option>Tầng 5</option>
                                 </select>
                             </div>
@@ -97,11 +94,7 @@ function RoomForm({ onClose, isEdit }) {
                                     Loại Phòng
                                 </label>
 
-                                <select>
-                                    <option value="">-- Chọn loại phòng-- </option>
-                                    <option>Phòng Máy</option>
-                                    <option>Phòng Học</option>
-                                </select>
+                                <input type="text" value="Phòng Máy" readOnly/>
                             </div>
 
                         </div>

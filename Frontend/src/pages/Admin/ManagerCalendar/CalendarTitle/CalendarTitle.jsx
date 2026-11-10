@@ -21,8 +21,8 @@ function CalendarTitle() {
                 <div className="schedule-filter">
                     <select>
                         <option value="">Loại đăng ký</option>
-                        <option>Thiết bị</option>
-                        <option>Phòng máy</option>
+                        <option>Thiết Bị</option>
+                        <option>Phòng Máy</option>
                     </select>
                     <i className="fa-solid fa-chevron-down"></i>
                 </div>

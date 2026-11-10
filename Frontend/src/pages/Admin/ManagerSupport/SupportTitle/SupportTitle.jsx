@@ -22,8 +22,8 @@ function SupportTitle() {
                 <div className="support-filter-box">
                     <select>
                         <option>Trạng thái</option>
-                        <option>Chưa trả lời</option>
-                        <option>Đã trả lời</option>
+                        <option>Chưa Trả Lời</option>
+                        <option>Đã Trả Lời</option>
                     </select>
                     <i className="fa-solid fa-chevron-down"></i>
                 </div>

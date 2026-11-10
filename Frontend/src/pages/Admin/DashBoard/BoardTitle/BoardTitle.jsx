@@ -6,7 +6,7 @@ function BoardTitle() {
         <>
             <div className="dashboard-title">
                 <i className="fa-solid fa-chart-line"></i>
-                <h1>TỔNG QUAN HỆ THỐNG</h1>
+                <h1>DASHBOARD</h1>
             </div>
 
             <div className="dashboard-cards">

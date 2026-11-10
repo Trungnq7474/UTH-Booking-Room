@@ -108,7 +108,20 @@
     cursor: pointer;
 }
 
-.assignment-view {
+.assignment-maintenance {
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 7px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.assignment-view, .assignment-maintenance {
     background: white;
     color: #008b8e;
     border: 1px solid #008b8e;
@@ -120,7 +133,7 @@
     border: 1px solid #008b8e;
 }
 
-.assignment-view:hover {
+.assignment-view:hover, .assignment-maintenance:hover {
     background: #e5f5f5;
 }
 

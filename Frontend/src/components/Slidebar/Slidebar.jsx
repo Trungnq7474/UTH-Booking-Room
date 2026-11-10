@@ -17,7 +17,7 @@ function Slidebar() {
 
                 <nav className="sidebar-menu">
                     <NavLink to="/" className={({ isActive }) => isActive ? "menu-item active" : "menu-item"}>
-                        <i className="fa-solid fa-table-columns"></i>
+                        <i className="fa-solid fa-chart-line"></i>
                         <span>DashBoard</span>
                     </NavLink>
 
