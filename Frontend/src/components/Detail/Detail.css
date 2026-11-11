@@ -1,4 +1,4 @@
-.equipment-detail-overlay {
+.common-detail-overlay {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.45);
@@ -21,7 +21,7 @@
     }
 }
 
-.equipment-detail-modal {
+.common-detail-modal {
     position: relative;
     width: 100%;
     max-width: 900px;
@@ -31,7 +31,7 @@
     animation: show 0.4s ease-in-out;
 }
 
-.equipment-detail-close {
+.common-detail-close {
     position: absolute;
     top: 8px;
     right: 10px;
@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 
-.equipment-detail-content {
+.common-detail-content {
     display: grid;
     grid-template-columns: 1fr 1.1fr;
     align-items: center;
@@ -52,34 +52,33 @@
     border-radius: 20px;
 }
 
-.equipment-detail-image {
-    width: 400px;
+.common-detail-image {
+    width: 100%;
+    max-width: 400px;
     height: 300px;
     padding: 10px;
     background: #f3f3f3;
     border-radius: 20px;
-    flex-shrink: 0;
 }
 
-.equipment-detail-image img {
+.common-detail-image img {
     width: 100%;
     height: 100%;
     background: white;
     border-radius: 15px;
 }
 
-.equipment-detail-info {
-    flex: 1;
+.common-detail-info {
     position: relative;
     padding-top: 25px;
 }
 
-.equipment-detail-info h2 {
+.common-detail-info h2 {
     color: #555;
     margin-bottom: 25px;
 }
 
-.equipment-detail-status {
+.common-detail-status {
     position: absolute;
     top: -30px;
     right: -9px;
@@ -88,45 +87,32 @@
     gap: 5px;
     padding: 9px 13px;
     border-radius: 25px;
-    background: #1900ff;
     color: white;
     font-weight: bold;
     font-size: 17px;
 }
 
-.equipment-detail-description,
-.equipment-detail-location,
-.equipment-detail-type,
-.equipment-detail-specifications {
+.common-detail-item {
     display: flex;
     align-items: flex-start;
     gap: 10px;
     margin-bottom: 15px;
 }
 
-.equipment-detail-description > i,
-.equipment-detail-location > i,
-.equipment-detail-type > i,
-.equipment-detail-specifications > i {
+.common-detail-item > i {
     color: #00678d;
     font-size: 24px;
     min-width: 25px;
     margin-top: 2px;
 }
 
-.equipment-detail-description p,
-.equipment-detail-location p,
-.equipment-detail-type p,
-.equipment-detail-specifications p {
+.common-detail-item p {
     display: block;
     font-size: 18px;
     line-height: 1.6;
     margin: 0;
 }
 
-.equipment-detail-description b,
-.equipment-detail-location b,
-.equipment-detail-type b,
-.equipment-detail-specifications b {
+.common-detail-item b {
     color: #00678d;
 }

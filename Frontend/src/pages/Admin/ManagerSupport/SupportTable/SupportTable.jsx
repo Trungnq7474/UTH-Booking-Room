@@ -1,25 +1,16 @@
+import Table from "../../../../components/Table/Table.jsx";
 
-import Table from "../../../components/Table/Table.jsx";
-
-function CalendarTable({ onView }) {
+function SupportTable() {
 
     const columns = [
         { title: "STT", key: "stt" },
 
         { title: "Họ Và Tên", key: "name" },
 
-        {
-            title: "Vai Trò",
-            key: "role",
-            render: (value, item) => (
-                <span className={item.roleClass}>
-                    {value}
-                </span>
-            )
-        },
+        { title: "Email", key: "email" },
 
-        { title: "Loại Đăng Ký", key: "type" },
-        
+        { title: "Nội Dung", key: "content" },
+
         {
             title: "Trạng Thái",
             key: "status",
@@ -36,10 +27,9 @@ function CalendarTable({ onView }) {
         {
             stt: "#001",
             name: "Nguyễn Văn A",
-            role: "Sinh Viên",
-            roleClass: "common-student",
-            type: "Thiết Bị",
-            status: "Chờ Duyệt",
+            email: "nguyenvana@ut.edu.vn",
+            content: "Cho em hỏi là cách đăng ký phòng máy như thế nào?",
+            status: "Chưa Trả Lời",
             statusClass: "common-status-pending",
             statusIcon: "fa-regular fa-clock"
         },
@@ -47,45 +37,36 @@ function CalendarTable({ onView }) {
         {
             stt: "#002",
             name: "Nguyễn Văn B",
-            role: "Giảng Viên",
-            roleClass: "common-teacher",
-            type: "Phòng Máy",
-            status: "Đã Sử Dụng",
+            email: "nguyenvanb@ut.edu.vn",
+            content: "Máy tính H003 bị lỗi không lên màn hình",
+            status: "Đã Trả Lời",
             statusClass: "common-status-active",
             statusIcon: "fa-solid fa-square-check"
         },
 
         {
+
             stt: "#003",
             name: "Nguyễn Thị C",
-            role: "Sinh Viên",
-            roleClass: "common-student",
-            type: "Thiết Bị",
-            status: "Đang Sử Dụng",
-            statusClass: "common-status-maintenance",
-            statusIcon: "fa-solid fa-gear"
+            email: "nguyenthic@ut.edu.vn",
+            content: "Nhờ hỗ trợ về tài khoản đăng nhập hệ thống",
+            status: "Đã Trả Lời",
+            statusClass: "common-status-active",
+            statusIcon: "fa-solid fa-square-check"
         },
-
+        
         {
             stt: "#004",
             name: "Phạm Văn D",
-            role: "Giảng Viên",
-            roleClass: "common-teacher",
-            type: "Phòng Máy",
-            status: "Chờ Duyệt",
+            email: "phamvand@ut.edu.vn",
+            content: "Hướng dẫn đặt lịch sử dụng thiết bị như thế nào?",
+            status: "Chưa Trả Lời",
             statusClass: "common-status-pending",
             statusIcon: "fa-regular fa-clock"
         }
     ];
 
     const actions = [
-        {
-            label: "Xem",
-            icon: "fa-regular fa-eye",
-            className: "common-view-button",
-            onClick: onView
-        },
-        
         {
             label: "Xóa",
             icon: "fa-regular fa-trash-can",
@@ -102,4 +83,4 @@ function CalendarTable({ onView }) {
     );
 }
 
-export default CalendarTable;
+export default SupportTable;

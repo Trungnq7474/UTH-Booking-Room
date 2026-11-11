@@ -1,17 +1,15 @@
-import Table from "../../../components/Table/Table.jsx";
+import Table from "../../../../components/Table/Table.jsx";
 
-function RoomTable({ onView, onEdit }) {
+function ToolTable({ onView, onEdit }) {
 
     const columns = [
         { title: "STT", key: "stt" },
 
         { title: "Hình Ảnh", key: "image" },
 
-        { title: "Tên Phòng", key: "name" },
+        { title: "Tên Thiết Bị", key: "name" },
 
-        { title: "Khu Vực", key: "area" },
-
-        { title: "Sức Chứa", key: "capacity" },
+        { title: "Loại Thiết Bị", key: "type" },
 
         {
             title: "Trạng Thái",
@@ -29,9 +27,8 @@ function RoomTable({ onView, onEdit }) {
         {
             stt: "#001",
             image: "Ảnh",
-            name: "Phòng Máy - H003",
-            area: "Khu H - Tầng Trệt",
-            capacity: "40 máy",
+            name: "Máy Tính Dell OptiPlex",
+            type: "Máy tính",
             status: "Hoạt Động",
             statusClass: "common-status-active",
             statusIcon: "fa-solid fa-square-check"
@@ -40,9 +37,8 @@ function RoomTable({ onView, onEdit }) {
         {
             stt: "#002",
             image: "Ảnh",
-            name: "Phòng Máy - H004",
-            area: "Khu H - Tầng Trệt",
-            capacity: "40 máy",
+            name: "Máy Chiếu Epson",
+            type: "Máy chiếu",
             status: "Bảo Trì",
             statusClass: "common-status-maintenance",
             statusIcon: "fa-solid fa-wrench"
@@ -51,9 +47,8 @@ function RoomTable({ onView, onEdit }) {
         {
             stt: "#003",
             image: "Ảnh",
-            name: "Phòng Máy - H509",
-            area: "Khu H - Tầng 5",
-            capacity: "40 máy",
+            name: "Switch Cisco CBS250-24T",
+            type: "Thiết bị mạng",
             status: "Hoạt Động",
             statusClass: "common-status-active",
             statusIcon: "fa-solid fa-square-check"
@@ -62,9 +57,8 @@ function RoomTable({ onView, onEdit }) {
         {
             stt: "#004",
             image: "Ảnh",
-            name: "Phòng - H104",
-            area: "Khu H - Tầng 1",
-            capacity: "3 thiết bị",
+            name: "Máy In HP LaserJet Pro",
+            type: "Máy in",
             status: "Hoạt Động",
             statusClass: "common-status-active",
             statusIcon: "fa-solid fa-square-check"
@@ -93,13 +87,16 @@ function RoomTable({ onView, onEdit }) {
         }
     ];
 
+
     return (
-        <Table
-            columns={columns}
-            data={data}
-            actions={actions}
-        />
-    );
+        <>
+            <Table 
+                columns={columns}
+                data={data}
+                actions={actions}
+            />
+        </>
+    )
 }
 
-export default RoomTable;
+export default ToolTable;

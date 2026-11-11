@@ -1,13 +1,17 @@
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
+import useOpen from "../../hooks/useOpen.js";
 import './Slidebar.css';
 
 function Slidebar() {
+
+    const { isOpen, setIsOpen } = useOpen();
+
     return (
         <>
-            <aside className="sidebar">
+            <aside className={`sidebar ${isOpen ? "" : "close"}`}>
 
-                <div className="icon">
+                <div className="icon" onClick={() => setIsOpen(!isOpen)}>
                     <i className="fa-solid fa-bars"></i>
                 </div>
 
@@ -54,7 +58,7 @@ function Slidebar() {
 
                 <button className="logout">
                     <i className="fa-solid fa-right-from-bracket"></i>
-                    Đăng Xuất
+                    <span>Đăng Xuất</span>
                 </button>
 
             </aside>

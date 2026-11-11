@@ -1,5 +1,5 @@
-import RoomTitle from "./RoomTitle.jsx";
-import RoomTable from "./RoomTable.jsx";
+import RoomTitle from "./RoomTitle/RoomTitle.jsx";
+import RoomTable from "./RoomTable/RoomTable.jsx";
 import RoomForm from "./RoomForm/RoomForm.jsx";
 import RoomDetail from "./RoomDetail/RoomDetail.jsx";
 import Pagination from "../../../components/Pagination/Pagination.jsx";

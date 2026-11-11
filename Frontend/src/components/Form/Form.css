@@ -1,4 +1,4 @@
-.modal-overlay {
+.common-form-overlay {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.45);
@@ -21,8 +21,8 @@
     }
 }
 
-.user-form {
-    width: 650px;
+.common-form-modal {
+    width: 900px;
     max-width: 100%;
     background: white;
     border-radius: 12px;
@@ -31,7 +31,7 @@
     animation: show 0.4s ease-in-out;
 }
 
-.form-header {
+.common-form-header {
     height: 65px;
     background: #078b8e;
     color: white;
@@ -41,7 +41,7 @@
     padding: 0 25px;
 }
 
-.close-button {
+.common-form-close {
     border: none;
     background: transparent;
     color: white;
@@ -49,10 +49,11 @@
     cursor: pointer;
 }
 
-.form-body {
+.common-form-body {
     padding: 25px 30px;
 }
 
+.common-form-group,
 .form-group {
     display: flex;
     flex-direction: column;
@@ -62,17 +63,16 @@
     min-width: 0;
 }
 
-.form-row {
-    display: flex;
-    gap: 20px;
-}
-
+.common-form-group label,
 .form-group label {
     font-size: 17px;
     font-weight: bold;
     color: #444;
 }
 
+.common-form-group input,
+.common-form-group select,
+.common-form-group textarea,
 .form-group input,
 .form-group select {
     width: 100%;
@@ -85,21 +85,71 @@
     font-size: 16px;
 }
 
+.common-form-group input[readonly] {
+    background: #f0f5f5;
+    color: #078b8e;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+.common-form-group input:focus,
+.common-form-group select:focus,
+.common-form-group textarea:focus,
 .form-group input:focus,
 .form-group select:focus {
     border-color: #078b8e;
     box-shadow: 0 0 3px rgba(7, 139, 142, 0.3);
 }
 
-.form-footer {
+.common-form-group textarea {
+    resize: none;
+    height: 90px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.common-form-upload {
+    min-height: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border: 1px dashed #078b8e;
+    border-radius: 8px;
+    background: #f5fbfb;
+    color: #078b8e;
+}
+
+.common-form-upload i {
+    font-size: 26px;
+    margin-top: 25px;
+}
+
+.common-form-upload p {
+    font-size: 13px;
+}
+
+.common-form-upload input {
+    width: auto;
+    max-width: 100%;
+    padding: 0;
+    border: none;
+    font-size: 12px;
+}
+
+.common-form-footer {
     display: flex;
     justify-content: flex-end;
     gap: 12px;
-    padding: 30px;
-    margin-top: -50px;
+    padding: 10px 30px;
+    margin-top: -30px;
 }
 
-.add-button {
+.common-form-submit {
     height: 42px;
     padding: 0 20px;
     border-radius: 7px;
@@ -109,8 +159,9 @@
     background: #078b8e;
     border: 1px solid #078b8e;
     color: white;
+    margin-bottom: 10px;
 }
 
-.add-button:hover {
+.common-form-submit:hover {
     background: #006f72;
 }

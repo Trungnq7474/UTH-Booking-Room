@@ -1,4 +1,4 @@
-import Table from "../../../components/Table/Table.jsx";
+import Table from "../../../../components/Table/Table.jsx";
 
 function UserTable({ onEdit }) {
 

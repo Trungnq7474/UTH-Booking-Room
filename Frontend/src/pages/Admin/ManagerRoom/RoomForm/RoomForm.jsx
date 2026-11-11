@@ -1,145 +1,97 @@
 import "./RoomForm.css";
+import Form from "../../../../components/Form/Form.jsx";
 
 function RoomForm({ onClose, isEdit }) {
     return (
         <>
-            <div className="add-room-overlay">
-                <div className="add-room-modal">
+            <Form
+                title={isEdit ? "SỬA PHÒNG" : "THÊM PHÒNG"}
+                icon={isEdit
+                    ? "fa-regular fa-pen-to-square"
+                    : "fa-solid fa-desktop"
+                }
+                onClose={onClose}
+                buttonText={isEdit ? "Cập Nhật" : "Thêm Phòng"}
+                buttonIcon={isEdit
+                    ? "fa-regular fa-pen-to-square"
+                    : "fa-solid fa-desktop"
+                }
+            >
 
-                    <div className="add-room-header">
-                        <h2>
-                            {isEdit ? (
-                                <>
-                                    <i className="fa-regular fa-pen-to-square"></i> SỬA PHÒNG
-                                </>
-                            ) : (
-                                <>
-                                    <i class="fa-solid fa-desktop"></i> THÊM PHÒNG
-                                </>
-                            )}
-                        </h2>
+                <div className="room-fields">
 
-                        <button type="button" className="add-room-close" onClick={onClose}>
-                            <i className="fa-solid fa-xmark"></i>
-                        </button>
+                    <div className="common-form-group">
+                        <label>Tên Phòng</label>
+                        <input
+                            type="text"
+                            placeholder="Nhập tên phòng..."
+                        />
                     </div>
 
-                    <div className="add-room-form">
-                        <div className="add-room-fields">
+                    <div className="common-form-group">
+                        <label>Trạng Thái</label>
+                        <select>
+                            <option value="">-- Chọn trạng thái --</option>
+                            <option>Hoạt Động</option>
+                            <option>Bảo Trì</option>
+                        </select>
+                    </div>
 
-                            <div className="add-room-group">
-                                <label>
-                                    Tên Phòng
-                                </label>
+                    <div className="common-form-group">
+                        <label>Khu Vực</label>
+                        <select>
+                            <option value="">-- Chọn khu vực --</option>
+                            <option>Khu H</option>
+                            <option>Khu I</option>
+                            <option>Khu K</option>
+                        </select>
+                    </div>
 
-                                <input
-                                    type="text"
-                                    placeholder="Nhập tên phòng..."
-                                />
-                            </div>
+                    <div className="common-form-group">
+                        <label>Tầng</label>
+                        <select>
+                            <option value="">-- Chọn tầng --</option>
+                            <option>Tầng Trệt</option>
+                            <option>Tầng 1</option>
+                            <option>Tầng 5</option>
+                        </select>
+                    </div>
 
-                            <div className="add-room-group">
-                                <label>
-                                    Trạng Thái
-                                </label>
+                    <div className="common-form-group">
+                        <label>Sức Chứa</label>
+                        <input
+                            type="number"
+                            min="1"
+                            placeholder="Nhập sức chứa..."
+                        />
+                    </div>
 
-                                <select>
-                                    <option value="">-- Chọn trạng thái --</option>
-                                    <option>Hoạt Động</option>
-                                    <option>Bảo Trì</option>
-                                </select>
-                            </div>
+                    <div className="common-form-group">
+                        <label>Loại Phòng</label>
+                        <input type="text" value="Phòng Máy" readOnly/>
+                    </div>
 
-                            <div className="add-room-group">
-                                <label>
-                                    Khu Vực
-                                </label>
+                </div>
 
-                                <select>
-                                    <option value="">-- Chọn khu vực --</option>
-                                    <option>Khu H</option>
-                                    <option>Khu I</option>
-                                    <option>Khu K</option>
-                                </select>
-                            </div>
+                <div className="common-form-group room-image">
+                    <label>Hình Ảnh Phòng</label>
 
-                            <div className="add-room-group">
-                                <label>
-                                    Tầng
-                                </label>
-
-                                <select>
-                                    <option value="">-- Chọn tầng --</option>
-                                    <option>Tầng Trệt</option>
-                                    <option>Tầng 1</option>
-                                    <option>Tầng 5</option>
-                                </select>
-                            </div>
-
-                            <div className="add-room-group">
-                                <label>
-                                    Sức Chứa
-                                </label>
-
-                                <input
-                                    type="number"
-                                    min="1"
-                                    placeholder="Nhập sức chứa..."
-                                    
-                                />
-                            </div>
-
-                            <div className="add-room-group">
-                                <label>
-                                    Loại Phòng
-                                </label>
-
-                                <input type="text" value="Phòng Máy" readOnly/>
-                            </div>
-
-                        </div>
-
-                        <div className="add-room-group add-room-image">
-                            <label>Hình Ảnh Phòng</label>
-
-                            <div className="add-room-upload">
-                                <i className="fa-regular fa-image"></i>
-
-                                <p>Chọn hình ảnh phòng</p>
-
-                                <input
-                                    type="file"
-                                />
-                            </div>
-                        </div>
-
-                        <div className="add-room-group add-room-description">
-                            <label>Mô Tả</label>
-
-                            <textarea
-                                rows="3"
-                                placeholder="Nhập mô tả về phòng..."
-                            ></textarea>
-                        </div>
-
-                        <div className="add-room-buttons">
-
-                            <button className="add-room-submit">
-                                {isEdit ? (
-                                    <>
-                                        <i className="fa-regular fa-pen-to-square"></i> Cập Nhật
-                                    </>
-                                ) : (
-                                    <>
-                                        <i class="fa-solid fa-desktop"></i> Thêm Phòng
-                                    </>
-                                )}
-                            </button>
-
-                        </div>
+                    <div className="common-form-upload">
+                        <i className="fa-regular fa-image"></i>
+                        <p>Chọn hình ảnh phòng</p>
+                        <input type="file" accept="image/*" />
                     </div>
                 </div>
-            </div>
+
+                <div className="common-form-group room-description">
+                    <label>Mô Tả</label>
+                    <textarea
+                        rows="3"
+                        placeholder="Nhập mô tả về phòng..."
+                    ></textarea>
+                </div>
+
+            </Form>
         </>
     )
 }

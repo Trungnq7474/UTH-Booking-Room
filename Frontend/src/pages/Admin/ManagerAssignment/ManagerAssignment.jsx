@@ -1,5 +1,5 @@
-import AssignmentTitle from "./AssignmentTitle.jsx";
-import AssignmentTable from "./AssignmentTable.jsx";
+import AssignmentTitle from "./AssignmentTitle/AssignmentTitle.jsx";
+import AssignmentTable from "./AssignmentTable/AssignmentTable.jsx";
 import AssignmentForm from "./AssignmentForm/AssignmentForm.jsx";
 import AssignmentDetail from "./AssignmentDetail/AssignmentDetail.jsx";
 import AssignmentMaintenance from "./AssignmentMaintenance/AssignmentMaintenance.jsx";

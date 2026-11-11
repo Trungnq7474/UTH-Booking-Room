@@ -1,5 +1,5 @@
-import SupportTitle from "./SupportTitle.jsx";
-import SupportTable from "./SupportTable.jsx";
+import SupportTitle from "./SupportTitle/SupportTitle.jsx";
+import SupportTable from "./SupportTable/SupportTable.jsx";
 import Pagination from "../../../components/Pagination/Pagination.jsx";
 
 

@@ -76,7 +76,7 @@
     font-size: 14px;
 }
 
-.add-button {
+.title-add-button {
     height: 42px;
     padding: 0 18px;
     border: none;
@@ -91,6 +91,6 @@
     cursor: pointer;
 }
 
-.add-button:hover {
+.title-add-button:hover {
     background: #006f72;
 }

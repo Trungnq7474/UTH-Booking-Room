@@ -6,12 +6,14 @@
     color: white;
     display: flex;
     flex-direction: column;
+    transition: all 0.4s ease-in-out;
 }
 
 .icon i {
     font-size: 22px;
     margin-top: 16px;
     margin-left: 180px;
+    cursor: pointer;
 }
 
 .sidebar-header {
@@ -44,8 +46,8 @@
     color: white;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 600;
-    transition: .2s;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
 }
 
 .menu-item i {
@@ -71,11 +73,81 @@
     justify-content: center;
     gap: 10px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: bold;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
 }
 
 .logout:hover {
     background: #e05b4b;
     color: white;
+}
+
+.sidebar {
+    width: 220px;
+    min-width: 220px;
+    min-height: 100vh;
+    transition: width 0.4s ease, min-width 0.4s ease;
+    overflow: hidden;
+}
+
+.sidebar.close {
+    width: 65px;
+    min-width: 65px;
+}
+
+.icon i {
+    font-size: 22px;
+    margin-top: 16px;
+    margin-left: 180px;
+    cursor: pointer;
+    transition: margin 0.4s ease;
+}
+
+.sidebar.close .icon i {
+    margin-left: 22px;
+}
+
+.sidebar-header {
+    height: 70px;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.sidebar.close .sidebar-header {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu-item,
+.logout {
+    white-space: nowrap;
+    transition: all 0.4s ease;
+}
+
+.menu-item span,
+.logout span {
+    display: inline-block;
+    max-width: 180px;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-width 0.4s ease, opacity 0.3s ease;
+}
+
+.sidebar.close .menu-item span,
+.sidebar.close .logout span {
+    max-width: 0;
+    opacity: 0;
+}
+
+.sidebar.close .menu-item,
+.sidebar.close .logout {
+    justify-content: center;
+    padding: 12px 0;
+}
+
+.sidebar.close .logout {
+    margin-left: 8px;
+    margin-right: 8px;
 }

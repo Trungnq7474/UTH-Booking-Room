@@ -1,5 +1,5 @@
-import ToolTitle from "./ToolTitle.jsx";
-import ToolTable from "./ToolTable.jsx";
+import ToolTitle from "./ToolTitle/ToolTitle.jsx";
+import ToolTable from "./ToolTable/ToolTable.jsx";
 import Pagination from "../../../components/Pagination/Pagination.jsx";
 import ToolForm from "./ToolForm/ToolForm.jsx";
 import ToolDetail from "./ToolDetail/ToolDetail.jsx";
