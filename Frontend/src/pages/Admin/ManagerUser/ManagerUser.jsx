@@ -1,5 +1,5 @@
-import UserTitle from "./UserTitle/UserTitle.jsx";
-import UserTable from "./UserTable/UserTable.jsx";
+import UserTitle from "./UserTitle.jsx";
+import UserTable from "./UserTable.jsx";
 import Pagination from "../../../components/Pagination/Pagination.jsx";
 import UserForm from "./UserForm/UserForm.jsx";
 import useAdd from "../../../hooks/useAdd.js";

@@ -1,0 +1,49 @@
+.assignment-detail-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    z-index: 1000;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(100px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.assignment-detail-modal {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    background: #f5f5f5;
+    border-radius: 20px;
+    padding: 40px 20px 18px;
+    animation: show 0.4s ease-in-out;
+}
+
+.assignment-detail-close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    color: #008b8e;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.assignment-detail-content {
+    background: white;
+    border-radius: 20px;
+    padding: 15px 40px 20px;
+}

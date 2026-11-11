@@ -1,11 +1,10 @@
 import "./CalendarDetail.css";
-import CalendarImageInfo from "./CalendarImageInfo/CalendarImageInfo.jsx";
 import CalendarForm from "./CalendarForm/CalendarForm.jsx";
 
 function CalendarDetail({ onClose }) {
     return (
         <>
-             <div className="schedule-detail-overlay">
+            <div className="schedule-detail-overlay">
                 <div className="schedule-detail-modal">
 
                     <button className="schedule-detail-close" onClick={onClose}>
@@ -13,8 +12,6 @@ function CalendarDetail({ onClose }) {
                     </button>
 
                     <div className="schedule-detail-content">
-
-                        <CalendarImageInfo />
 
                         <CalendarForm />
 
