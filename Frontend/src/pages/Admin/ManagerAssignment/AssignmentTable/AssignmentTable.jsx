@@ -87,7 +87,7 @@ function AssignmentTable({ onView, onSee }) {
             code: "#SC - 003",
             reporter: "Nguyễn Văn C",
             name: "Wifi",
-            status: "Đang Thực Hiện",
+            status: "Đang Xử Lý",
             statusClass: "common-status-maintenance",
             statusIcon: "fa-solid fa-gear",
             maintenance: false,
