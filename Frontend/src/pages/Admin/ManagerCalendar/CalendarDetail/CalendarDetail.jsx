@@ -1,14 +1,14 @@
 import DetailModal from "../../../../components/DetailModal/DetailModal.jsx";
-import image from "../../../../assets/epson.png";
+import keyboard from "../../../../assets/Equitment/keyboard.png";
 
 function CalendarDetail({ onClose }) {
     return (
         <>
             <DetailModal
                 onClose={onClose}
-                image={image}
+                image={keyboard}
                 status="Chờ Duyệt"
-                name="Máy Chiếu Epson"
+                name="Bàn Phím A4Tech KR-83"
                 title="Thông Tin Đăng Ký"
                 showButtons={true}
 
@@ -17,9 +17,8 @@ function CalendarDetail({ onClose }) {
                         <p>
                             <i className="fa-solid fa-file-lines"></i>
                             <span>
-                                <b>Mô Tả:</b> Máy chiếu được trang bị nhằm hỗ trợ
-                                trình chiếu bài giảng và phục vụ hoạt động
-                                giảng dạy trong phòng học.
+                                <b>Mô Tả:</b> Bàn phím được trang bị nhằm hỗ trợ soạn thảo văn bản 
+                                và thực hiện các thao tác điều khiển máy tính trong quá trình học tập và giảng dạy.
                             </span>
                         </p>
 
@@ -31,7 +30,7 @@ function CalendarDetail({ onClose }) {
                         <p>
                             <i className="fa-solid fa-hard-drive"></i>
                             <span>
-                                <b>Loại Đăng Ký:</b> Thiết bị - Máy chiếu
+                                <b>Loại Đăng Ký:</b> Thiết bị - Bàn phím
                             </span>
                         </p>
                     </>

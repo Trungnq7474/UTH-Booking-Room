@@ -1,12 +1,12 @@
-import image from "../../../../assets/epson.png";
+import keyboard from "../../../../assets/Equitment/keyboard.png";
 import Detail from "../../../../components/Detail/Detail.jsx";
 
 function ToolDetail({ onClose }) {
     return (
         <>
             <Detail
-                image={image}
-                title="Máy Chiếu Epson"
+                image={keyboard}
+                title="Bàn Phím A4Tech KR-83"
                 status="Bảo Trì"
                 statusIcon="fa-solid fa-wrench"
                 statusColor="#1900ff"
@@ -15,8 +15,8 @@ function ToolDetail({ onClose }) {
                 <div className="common-detail-item">
                     <i className="fa-solid fa-file-lines"></i>
                     <p>
-                        <b>Mô Tả:</b> Máy chiếu được trang bị nhằm hỗ trợ
-                        trình chiếu bài giảng và phục vụ hoạt động giảng dạy hiệu quả.
+                        <b>Mô Tả:</b> Bàn phím được trang bị nhằm hỗ trợ soạn thảo văn bản 
+                        và thực hiện các thao tác điều khiển máy tính trong quá trình học tập và giảng dạy.
                     </p>
                 </div>
 

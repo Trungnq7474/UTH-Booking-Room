@@ -1,14 +1,14 @@
 import DetailModal from "../../../../components/DetailModal/DetailModal.jsx";
-import image from "../../../../assets/epson.png";
+import keyboard from "../../../../assets/Equitment/keyboard.png";
 
 function AssignmentDetail({ onClose }) {
     return (
         <>
             <DetailModal
                 onClose={onClose}
-                image={image}
+                image={keyboard}
                 status="Chờ Phân Công"
-                name="Máy Chiếu Epson"
+                name="Bàn Phím A4Tech KR-83"
                 title="Thông Tin Sự Cố"
                 statusClass="assignment-status"
 
@@ -23,7 +23,7 @@ function AssignmentDetail({ onClose }) {
 
                         <p>
                             <i className="fa-solid fa-circle-exclamation"></i>
-                            <span><b>Tên Sự Cố:</b> Máy chiếu</span>
+                            <span><b>Tên Sự Cố:</b> Bàn Phím</span>
                         </p>
                     </>
                 }
@@ -57,7 +57,7 @@ function AssignmentDetail({ onClose }) {
                             <p>
                                 <i className="fa-solid fa-message"></i>
                                 <span>
-                                    <b>Mô Tả Sự Cố:</b> Máy chiếu không hoạt động khi bật nguồn.
+                                    <b>Mô Tả Sự Cố:</b> Bàn phím hoạt động nhưng gõ văn bản không được.
                                 </span>
                             </p>
                         </div>

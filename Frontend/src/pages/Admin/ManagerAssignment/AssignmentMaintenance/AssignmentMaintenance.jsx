@@ -1,14 +1,14 @@
 import DetailModal from "../../../../components/DetailModal/DetailModal.jsx";
-import image from "../../../../assets/epson.png";
+import keyboard from "../../../../assets/Equitment/keyboard.png";
 
 function AssignmentMaintenance({ onClose }) {
     return (
         <>
             <DetailModal
                 onClose={onClose}
-                image={image}
+                image={keyboard}
                 status="Chờ Duyệt"
-                name="Máy Chiếu Epson"
+                name="Bàn Phím A4Tech KR-83"
                 title="Thông Tin Đề Xuất Bảo Trì"
                 showButtons={true}
                 statusClass="maintenance-status"
@@ -22,7 +22,7 @@ function AssignmentMaintenance({ onClose }) {
 
                         <p>
                             <i className="fa-solid fa-hard-drive"></i>
-                            <span><b>Loại Thiết Bị:</b> Máy chiếu</span>
+                            <span><b>Loại Thiết Bị:</b> Bàn Phím</span>
                         </p>
 
                         <p>
@@ -61,7 +61,7 @@ function AssignmentMaintenance({ onClose }) {
                             <p>
                                 <i className="fa-solid fa-message"></i>
                                 <span>
-                                    <b>Nội Dung:</b> Máy chiếu đã sử dụng trong thời gian dài,
+                                    <b>Nội Dung:</b> Bàn phím đã sử dụng trong thời gian dài,
                                     cần kiểm tra và bảo dưỡng.
                                 </span>
                             </p>

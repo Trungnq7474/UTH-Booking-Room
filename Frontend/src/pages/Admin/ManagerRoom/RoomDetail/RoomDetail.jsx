@@ -1,11 +1,11 @@
 import Detail from "../../../../components/Detail/Detail.jsx";
-import image from "../../../../assets/lap.png";
+import H003 from "../../../../assets/Room/H003.jpg";
 
 function RoomDetail({ onClose }) {
     return (
         <>
             <Detail
-                image={image}
+                image={H003}
                 title="Phòng Máy - H003"
                 status="Hoạt Động"
                 statusIcon="fa-solid fa-square-check"
