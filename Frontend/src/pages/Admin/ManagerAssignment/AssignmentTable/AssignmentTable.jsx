@@ -9,7 +9,7 @@ function AssignmentTable({ onView, onSee }) {
 
         { title: "Người Báo Cáo", key: "reporter" },
 
-        { title: "Tên Sự Cố", key: "name" },
+        { title: "Loại Sự Cố", key: "name" },
 
         {
             title: "Trạng Thái",

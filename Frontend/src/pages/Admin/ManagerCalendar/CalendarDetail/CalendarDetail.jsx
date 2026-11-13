@@ -15,10 +15,16 @@ function CalendarDetail({ onClose }) {
                 information={
                     <>
                         <p>
-                            <i className="fa-solid fa-file-lines"></i>
+                            <i className="fa-regular fa-calendar"></i>
                             <span>
-                                <b>Mô Tả:</b> Bàn phím được trang bị nhằm hỗ trợ soạn thảo văn bản 
-                                và thực hiện các thao tác điều khiển máy tính trong quá trình học tập và giảng dạy.
+                                <b>Thời Gian Bắt Đầu:</b> 6/11/2026 8:00
+                            </span>
+                        </p>
+
+                        <p>
+                            <i className="fa-regular fa-calendar"></i>
+                            <span>
+                                <b>Thời Gian Kết Thúc:</b> 6/11/2026 12:00 
                             </span>
                         </p>
 

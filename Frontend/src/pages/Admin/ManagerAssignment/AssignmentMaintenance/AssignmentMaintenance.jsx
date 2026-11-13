@@ -15,14 +15,11 @@ function AssignmentMaintenance({ onClose }) {
 
                 information={
                     <>
+                        <p className="code">#BT - 001</p>
+
                         <p>
                             <i className="fa-solid fa-location-dot"></i>
                             <b>Phòng Máy - H004 - Khu H - Tầng Trệt</b>
-                        </p>
-
-                        <p>
-                            <i className="fa-solid fa-hard-drive"></i>
-                            <span><b>Loại Thiết Bị:</b> Bàn Phím</span>
                         </p>
 
                         <p>
@@ -43,7 +40,7 @@ function AssignmentMaintenance({ onClose }) {
 
                             <p>
                                 <i className="fa-regular fa-id-card"></i>
-                                <span><b>Vai Trò:</b> <strong>Sinh Viên</strong></span>
+                                <span><b>Vai Trò:</b> <strong >Nhân Viên Kỹ Thuật</strong></span>
                             </p>
 
                             <p>

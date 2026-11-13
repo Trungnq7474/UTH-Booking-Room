@@ -20,11 +20,15 @@ function AssignmentForm({ onClose }) {
                     </div>
 
                     <div className="common-form-group">
-                        <label>Tên Sự Cố</label>
-                        <input
-                            type="text"
-                            placeholder="Nhập tên sự cố"
-                        />
+                        <label>Loại Sự Cố</label>
+                       <select>
+                            <option value="">-- Chọn Loại Sự Cố --</option>
+                            <option>Máy Tính</option>
+                            <option>Bàn Phím</option>
+                            <option>Tai Nghe</option>
+                            <option>Chuột</option>
+                            <option>Micro</option>
+                        </select>
                     </div>
 
                     <div className="common-form-group">

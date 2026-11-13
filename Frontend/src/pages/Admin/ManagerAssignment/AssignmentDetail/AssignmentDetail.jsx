@@ -23,7 +23,7 @@ function AssignmentDetail({ onClose }) {
 
                         <p>
                             <i className="fa-solid fa-circle-exclamation"></i>
-                            <span><b>Tên Sự Cố:</b> Bàn Phím</span>
+                            <span><b>Loại Sự Cố:</b> Bàn Phím</span>
                         </p>
                     </>
                 }

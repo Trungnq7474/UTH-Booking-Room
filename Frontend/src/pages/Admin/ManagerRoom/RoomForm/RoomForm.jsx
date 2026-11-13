@@ -65,12 +65,6 @@ function RoomForm({ onClose, isEdit }) {
                             placeholder="Nhập sức chứa..."
                         />
                     </div>
-
-                    <div className="common-form-group">
-                        <label>Loại Phòng</label>
-                        <input type="text" value="Phòng Máy" readOnly/>
-                    </div>
-
                 </div>
 
                 <div className="common-form-group room-image">

@@ -129,7 +129,7 @@
 }
 
 .detail-status.maintenance-status {
-    top: -21px;
+    top: -28px;
 }
 
 .detail-registration {
@@ -181,7 +181,7 @@
 }
 
 .detail-column p strong {
-    color: rgb(4, 0, 255);
+    color: #005f63;
 }
 
 .detail-buttons {
